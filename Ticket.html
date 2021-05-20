@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!--wrapper-->
+    <div class="wrapper">
+        <!-- navigation-->
+
+        <div class="container"></div>
+        <form action="Success.html" method="post" onsubmit="return validation();">
+
+            <label for="subject">Subject</label>
+            <div class="data">
+                <p>Need Keyboard</p>
+            </div>
+
+            <label for="location">Location</label>
+            <div class="data">
+                <p>Main Office</p>
+            </div>
+         
+            <label for="description">Description</label>
+            <div class="data">
+                <p>
+                    It seems that the keyboard has gone missing from my computer. I need one to replace it as soon as possible. I can't do any work until this request is complete.
+                </p>
+            </div>
+            <input type="checkbox" disabled="disabled" checked="unchecked">
+            <label for="software"> Software</label><br>
+            
+            <input type="submit" value="Edit">
+
+        </form>
+        <!--Form Validation-->
+        <div id="eresult"></div>
+        <script type="text/javascript">
+            function validation() {
+                var name = document.getElementById('subject').value;
+                var name = document.getElementById('location').value;
+                if (subject == '' || location == '' || description == '') {
+                    document.getElementById("eresult").innerHTML = "All Fields Required";
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+
+        </script>
+        </form>
+
+
+</body>
+
+</html>

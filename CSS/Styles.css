@@ -75,6 +75,10 @@ table{
     background-color: #fff
 }
 
+a {
+    color: black;
+    text-decoration: none; 
+  }
 
 tr:nth-child(odd){
     background-color:#ccc;	
@@ -107,7 +111,14 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-
+.data {
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 1px;
+    margin: 0px;
+    Width: 100%;
+    background:#fff;
+  }
 span.psw {
   float: right;
   padding-top: 16px;
