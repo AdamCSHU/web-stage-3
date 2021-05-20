@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!--wrapper-->
+    <div class="wrapper">
+        <!-- navigation-->
+
+        <div class="container"></div>
+        <form action="Success.html" method="post" onsubmit="return validation();">
+
+            <label for="fname">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject here">
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location here">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" placeholder="Write something.."
+                style="height:200px"></textarea>
+            <input type="checkbox" id="software" name="software" >
+            <label for="software"> Software</label><br>
+            <input type="checkbox" id="hardware" name="hardware" >
+            <label for="hardware"> Hardware</label><br>
+            <input type="checkbox" id="unknown" name="unknown" >
+            <label for="unknown"> Unknown</label><br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+        <!--Form Validation-->
+        <div id="eresult"></div>
+        <script type="text/javascript">
+            function validation() {
+                var name = document.getElementById('subject').value;
+                var name = document.getElementById('location').value;
+                if (subject == '' || location == '' || description == '') {
+                    document.getElementById("eresult").innerHTML = "All Fields Required";
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+
+        </script>
+        </form>
+
+
+</body>
+
+</html>
